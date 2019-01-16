@@ -1,0 +1,13 @@
+# IDE
+.idea
+
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+
+# Build
+dist
+
+# Tests
+coverage

@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/flowtype", "prettier/react"],
+  "plugins": ["flowtype", "react", "jest", "prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", "jsx"]
+      }
+    ],
+    "prettier/prettier": "error",
+    "max-len": ["error", { "code": 150, "tabWidth": 2, "ignoreUrls": true }]
+  },
+  "env": {
+    "jest/globals": true,
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./config/webpack-common-config.js"
+      }
+    }
+  }
+}
