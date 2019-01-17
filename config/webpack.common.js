@@ -23,6 +23,11 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'bundle.js',
   },
+  resolve: {
+    alias: {
+      styles: path.resolve(__dirname, 'src/styles/'),
+    },
+  },
   module: {
     rules: [
       {
@@ -64,12 +69,14 @@ module.exports = {
       {
         // Check out the image-webpack-loader and url-loader to enhance
         test: /\.(png|svg|jpg|gif)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            outputPath: 'images/',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images/',
+            },
           },
-        }],
+        ],
       },
     ],
   },

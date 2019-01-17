@@ -1,30 +1,172 @@
 // @flow
 import React from 'react';
-import './app.css';
-import logo from '../images/logo.svg';
-import Button from '../components/Button';
+import StyledApp from './App.styles';
+import GlobalStyle from '../styles/Global';
+import Header from '../layouts/Header';
+import { ThemeProvider } from 'styled-components';
+import { Table, Button, Heading, Grid, Col, Row } from '../components/elements';
+import { theme } from '../styles';
+import LineChart from '../components/graphs/LineChart';
+import BarChart from '../components/graphs/BarChart';
+import Arc from '../components/graphs/ArcReactVis';
+// import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 
-// define the button text and give it a type of string
-const buttonText: string = 'Button label';
+console.log(theme);
 
 const App = () => (
-  <div className="app">
-    <header className="app-header">
-      <img src={logo} alt="Bastien Schaeffer" />
-      <h1 className="app-title">Webpack React boilerplate</h1>
-      <p>The color of this page is: white</p>
-      <p>
-        Flow:
-        https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3
-      </p>
-      <p>
-        docker build -t build-monitor docker/
-        docker run -p 5000:5000 build-monitor
-        docker run -it build-monitor sh
-      </p>
-      <Button>{buttonText}</Button>
-    </header>
-  </div>
+  <ThemeProvider theme={theme}>
+    <StyledApp>
+      <GlobalStyle />
+      <Header />
+
+      <main>
+        <Grid fluid>
+          <Row>
+            <Col xs={12}>
+              <Heading level={1} size="lg" weight="bold">
+                Build your data
+              </Heading>
+              <hr />
+              <br />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} md={6}>
+              <BarChart />
+            </Col>
+            <Col xs={12} md={6}>
+              <LineChart />
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col xs={12} md={6}>
+              <Arc />
+            </Col>
+            <Col xs={12} md={6}>
+              <Arc />
+            </Col>
+            <Col xs={12}>
+              <hr />
+              <br />
+              <br />
+              <Table>
+                <tr>
+                  <th>Title</th>
+                  <th>Title</th>
+                  <th>Title</th>
+                  <th>Title</th>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+              </Table>
+              <p>
+                Level gives the h tag number, whereas the size modify the
+                font-size
+              </p>
+              <Button palette="primary" size="md">
+                Display the graph
+              </Button>
+              <Button palette="secondary" size="md">
+                Adjust data
+              </Button>
+              <hr />
+              <br />
+              <Table>
+                <tr>
+                  <th>Title</th>
+                  <th>Title</th>
+                  <th>Title</th>
+                  <th>Title</th>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                  <td>Value</td>
+                </tr>
+              </Table>
+              <p>
+                Level gives the h tag number, whereas the size modify the
+                font-size
+              </p>
+              <Button palette="primary" size="md">
+                Display the graph
+              </Button>
+              <Button palette="secondary" size="md">
+                Adjust data
+              </Button>
+              <hr />
+            </Col>
+          </Row>
+        </Grid>
+      </main>
+    </StyledApp>
+  </ThemeProvider>
 );
 
 export default App;

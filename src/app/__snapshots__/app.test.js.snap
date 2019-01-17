@@ -15,262 +15,494 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": <header
-        className="app-header"
-      >
-        <img
-          alt="Bastien Schaeffer"
-          src="logo.svg"
-        />
-        <h1
-          className="app-title"
-        >
-          Webpack React boilerplate
-        </h1>
-        <p>
-          The color of this page is: white
-        </p>
-        <p>
-          Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3
-        </p>
-        <p>
-          docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh
-        </p>
-        <Button>
-          Button label
-        </Button>
-      </header>,
-      "className": "app",
+      "children": Array [
+        <GlobalStyleComponent />,
+        <ForwardRef />,
+        <main>
+          This is the main.
+          <Button>
+            Button test
+          </Button>
+          <Button
+            palette="primary"
+          >
+            Button test
+          </Button>
+          <Button
+            palette="secondary"
+          >
+            Button test
+          </Button>
+          <Button
+            palette="naked"
+          >
+            Button test
+          </Button>
+          <hr />
+          <Button
+            palette="primary"
+            size="sm"
+          >
+            Button test
+          </Button>
+          <Button
+            palette="secondary"
+            size="md"
+          >
+            Button test
+          </Button>
+          <Button
+            palette="naked"
+            size="lg"
+          >
+            Button test
+          </Button>
+          <hr />
+          <Button
+            fullWidth={true}
+            palette="primary"
+            size="sm"
+          >
+            Button test
+          </Button>
+          <hr />
+          <p>
+            Weight
+          </p>
+          <Heading
+            level={1}
+            size="lg"
+            weight="light"
+          >
+            Heading
+          </Heading>
+          <Heading
+            level={1}
+            size="lg"
+            weight="normal"
+          >
+            Heading
+          </Heading>
+          <Heading
+            level={1}
+            size="lg"
+            weight="bold"
+          >
+            Heading
+          </Heading>
+          <hr />
+          <p>
+            Level gives the h tag number, whereas the size modify the font-size
+          </p>
+          <Heading
+            level={4}
+            size="xs"
+          >
+            Heading
+          </Heading>
+          <Heading
+            level={3}
+            size="lg"
+          >
+            Heading
+          </Heading>
+          <Heading
+            level={4}
+            size="lg"
+          >
+            Heading
+          </Heading>
+          <hr />
+          <Heading
+            level={1}
+            size="md"
+          >
+            Heading
+          </Heading>
+          <Heading
+            level={2}
+            size="sm"
+          >
+            Heading
+          </Heading>
+          <Heading
+            level={3}
+            size="xs"
+          >
+            Heading
+          </Heading>
+          <hr />
+          <p>
+            family is the font
+          </p>
+          <Heading
+            family="primary"
+            level={1}
+            size="md"
+          >
+            Heading
+          </Heading>
+          <Heading
+            family="secondary"
+            level={1}
+            size="md"
+          >
+            Heading
+          </Heading>
+        </main>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <img
-            alt="Bastien Schaeffer"
-            src="logo.svg"
-          />,
-          <h1
-            className="app-title"
-          >
-            Webpack React boilerplate
-          </h1>,
-          <p>
-            The color of this page is: white
-          </p>,
-          <p>
-            Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3
-          </p>,
-          <p>
-            docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh
-          </p>,
-          <Button>
-            Button label
-          </Button>,
-        ],
-        "className": "app-header",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "alt": "Bastien Schaeffer",
-            "src": "logo.svg",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+  ",
+              "
+  position: fixed;
+  ",
+              "left",
+              ": ",
+              "0",
+              ";
+  ",
+              "top",
+              ": ",
+              "0",
+              ";
+",
+              "
+  z-index:2;
+  background: ",
+              "#165A78",
+              ";
+  width: 100%;
+  padding: 10px;
+  ",
+              "box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)",
+              ";
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+",
+            ],
           },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
+          "displayName": "Styled(Header)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Webpack React boilerplate",
-            "className": "app-title",
-          },
-          "ref": null,
-          "rendered": "Webpack React boilerplate",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "The color of this page is: white",
-          },
-          "ref": null,
-          "rendered": "The color of this page is: white",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3",
-          },
-          "ref": null,
-          "rendered": "Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh",
-          },
-          "ref": null,
-          "rendered": "docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "Button label",
-          },
-          "ref": null,
-          "rendered": "Button label",
-          "type": [Function],
-        },
-      ],
-      "type": "header",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <header
-          className="app-header"
-        >
-          <img
-            alt="Bastien Schaeffer"
-            src="logo.svg"
-          />
-          <h1
-            className="app-title"
-          >
-            Webpack React boilerplate
-          </h1>
-          <p>
-            The color of this page is: white
-          </p>
-          <p>
-            Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3
-          </p>
-          <p>
-            docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh
-          </p>
-          <Button>
-            Button label
-          </Button>
-        </header>,
-        "className": "app",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <img
-              alt="Bastien Schaeffer"
-              src="logo.svg"
-            />,
-            <h1
-              className="app-title"
-            >
-              Webpack React boilerplate
-            </h1>,
-            <p>
-              The color of this page is: white
-            </p>,
-            <p>
-              Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3
-            </p>,
-            <p>
-              docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh
-            </p>,
+            "This is the main.",
             <Button>
-              Button label
+              Button test
             </Button>,
+            <Button
+              palette="primary"
+            >
+              Button test
+            </Button>,
+            <Button
+              palette="secondary"
+            >
+              Button test
+            </Button>,
+            <Button
+              palette="naked"
+            >
+              Button test
+            </Button>,
+            <hr />,
+            <Button
+              palette="primary"
+              size="sm"
+            >
+              Button test
+            </Button>,
+            <Button
+              palette="secondary"
+              size="md"
+            >
+              Button test
+            </Button>,
+            <Button
+              palette="naked"
+              size="lg"
+            >
+              Button test
+            </Button>,
+            <hr />,
+            <Button
+              fullWidth={true}
+              palette="primary"
+              size="sm"
+            >
+              Button test
+            </Button>,
+            <hr />,
+            <p>
+              Weight
+            </p>,
+            <Heading
+              level={1}
+              size="lg"
+              weight="light"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              level={1}
+              size="lg"
+              weight="normal"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              level={1}
+              size="lg"
+              weight="bold"
+            >
+              Heading
+            </Heading>,
+            <hr />,
+            <p>
+              Level gives the h tag number, whereas the size modify the font-size
+            </p>,
+            <Heading
+              level={4}
+              size="xs"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              level={3}
+              size="lg"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              level={4}
+              size="lg"
+            >
+              Heading
+            </Heading>,
+            <hr />,
+            <Heading
+              level={1}
+              size="md"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              level={2}
+              size="sm"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              level={3}
+              size="xs"
+            >
+              Heading
+            </Heading>,
+            <hr />,
+            <p>
+              family is the font
+            </p>,
+            <Heading
+              family="primary"
+              level={1}
+              size="md"
+            >
+              Heading
+            </Heading>,
+            <Heading
+              family="secondary"
+              level={1}
+              size="md"
+            >
+              Heading
+            </Heading>,
           ],
-          "className": "app-header",
         },
         "ref": null,
         "rendered": Array [
+          "This is the main.",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "palette": "primary",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "palette": "secondary",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "palette": "naked",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
-            "props": Object {
-              "alt": "Bastien Schaeffer",
-              "src": "logo.svg",
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
-            "type": "img",
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "palette": "primary",
+              "size": "sm",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "palette": "secondary",
+              "size": "md",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "palette": "naked",
+              "size": "lg",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Button test",
+              "fullWidth": true,
+              "palette": "primary",
+              "size": "sm",
+            },
+            "ref": null,
+            "rendered": "Button test",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Webpack React boilerplate",
-              "className": "app-title",
+              "children": "Weight",
             },
             "ref": null,
-            "rendered": "Webpack React boilerplate",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "The color of this page is: white",
-            },
-            "ref": null,
-            "rendered": "The color of this page is: white",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3",
-            },
-            "ref": null,
-            "rendered": "Flow: https://medium.com/@joshuacrass/type-checking-with-flow-react-babel-and-webpack-290cbf4cd4b3",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh",
-            },
-            "ref": null,
-            "rendered": "docker build -t build-monitor docker/ docker run -p 5000:5000 build-monitor docker run -it build-monitor sh",
+            "rendered": "Weight",
             "type": "p",
           },
           Object {
@@ -278,16 +510,946 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Button label",
+              "children": "Heading",
+              "level": 1,
+              "size": "lg",
+              "weight": "light",
             },
             "ref": null,
-            "rendered": "Button label",
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 1,
+              "size": "lg",
+              "weight": "normal",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 1,
+              "size": "lg",
+              "weight": "bold",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Level gives the h tag number, whereas the size modify the font-size",
+            },
+            "ref": null,
+            "rendered": "Level gives the h tag number, whereas the size modify the font-size",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 4,
+              "size": "xs",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 3,
+              "size": "lg",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 4,
+              "size": "lg",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 1,
+              "size": "md",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 2,
+              "size": "sm",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "level": 3,
+              "size": "xs",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "family is the font",
+            },
+            "ref": null,
+            "rendered": "family is the font",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "family": "primary",
+              "level": 1,
+              "size": "md",
+            },
+            "ref": null,
+            "rendered": "Heading",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Heading",
+              "family": "secondary",
+              "level": 1,
+              "size": "md",
+            },
+            "ref": null,
+            "rendered": "Heading",
             "type": [Function],
           },
         ],
-        "type": "header",
+        "type": "main",
       },
-      "type": "div",
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  min-height: 100vh;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <GlobalStyleComponent />,
+          <ForwardRef />,
+          <main>
+            This is the main.
+            <Button>
+              Button test
+            </Button>
+            <Button
+              palette="primary"
+            >
+              Button test
+            </Button>
+            <Button
+              palette="secondary"
+            >
+              Button test
+            </Button>
+            <Button
+              palette="naked"
+            >
+              Button test
+            </Button>
+            <hr />
+            <Button
+              palette="primary"
+              size="sm"
+            >
+              Button test
+            </Button>
+            <Button
+              palette="secondary"
+              size="md"
+            >
+              Button test
+            </Button>
+            <Button
+              palette="naked"
+              size="lg"
+            >
+              Button test
+            </Button>
+            <hr />
+            <Button
+              fullWidth={true}
+              palette="primary"
+              size="sm"
+            >
+              Button test
+            </Button>
+            <hr />
+            <p>
+              Weight
+            </p>
+            <Heading
+              level={1}
+              size="lg"
+              weight="light"
+            >
+              Heading
+            </Heading>
+            <Heading
+              level={1}
+              size="lg"
+              weight="normal"
+            >
+              Heading
+            </Heading>
+            <Heading
+              level={1}
+              size="lg"
+              weight="bold"
+            >
+              Heading
+            </Heading>
+            <hr />
+            <p>
+              Level gives the h tag number, whereas the size modify the font-size
+            </p>
+            <Heading
+              level={4}
+              size="xs"
+            >
+              Heading
+            </Heading>
+            <Heading
+              level={3}
+              size="lg"
+            >
+              Heading
+            </Heading>
+            <Heading
+              level={4}
+              size="lg"
+            >
+              Heading
+            </Heading>
+            <hr />
+            <Heading
+              level={1}
+              size="md"
+            >
+              Heading
+            </Heading>
+            <Heading
+              level={2}
+              size="sm"
+            >
+              Heading
+            </Heading>
+            <Heading
+              level={3}
+              size="xs"
+            >
+              Heading
+            </Heading>
+            <hr />
+            <p>
+              family is the font
+            </p>
+            <Heading
+              family="primary"
+              level={1}
+              size="md"
+            >
+              Heading
+            </Heading>
+            <Heading
+              family="secondary"
+              level={1}
+              size="md"
+            >
+              Heading
+            </Heading>
+          </main>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "rules": Array [
+                "
+  ",
+                "
+  position: fixed;
+  ",
+                "left",
+                ": ",
+                "0",
+                ";
+  ",
+                "top",
+                ": ",
+                "0",
+                ";
+",
+                "
+  z-index:2;
+  background: ",
+                "#165A78",
+                ";
+  width: 100%;
+  padding: 10px;
+  ",
+                "box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)",
+                ";
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+",
+              ],
+            },
+            "displayName": "Styled(Header)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "This is the main.",
+              <Button>
+                Button test
+              </Button>,
+              <Button
+                palette="primary"
+              >
+                Button test
+              </Button>,
+              <Button
+                palette="secondary"
+              >
+                Button test
+              </Button>,
+              <Button
+                palette="naked"
+              >
+                Button test
+              </Button>,
+              <hr />,
+              <Button
+                palette="primary"
+                size="sm"
+              >
+                Button test
+              </Button>,
+              <Button
+                palette="secondary"
+                size="md"
+              >
+                Button test
+              </Button>,
+              <Button
+                palette="naked"
+                size="lg"
+              >
+                Button test
+              </Button>,
+              <hr />,
+              <Button
+                fullWidth={true}
+                palette="primary"
+                size="sm"
+              >
+                Button test
+              </Button>,
+              <hr />,
+              <p>
+                Weight
+              </p>,
+              <Heading
+                level={1}
+                size="lg"
+                weight="light"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                level={1}
+                size="lg"
+                weight="normal"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                level={1}
+                size="lg"
+                weight="bold"
+              >
+                Heading
+              </Heading>,
+              <hr />,
+              <p>
+                Level gives the h tag number, whereas the size modify the font-size
+              </p>,
+              <Heading
+                level={4}
+                size="xs"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                level={3}
+                size="lg"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                level={4}
+                size="lg"
+              >
+                Heading
+              </Heading>,
+              <hr />,
+              <Heading
+                level={1}
+                size="md"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                level={2}
+                size="sm"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                level={3}
+                size="xs"
+              >
+                Heading
+              </Heading>,
+              <hr />,
+              <p>
+                family is the font
+              </p>,
+              <Heading
+                family="primary"
+                level={1}
+                size="md"
+              >
+                Heading
+              </Heading>,
+              <Heading
+                family="secondary"
+                level={1}
+                size="md"
+              >
+                Heading
+              </Heading>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "This is the main.",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "palette": "primary",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "palette": "secondary",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "palette": "naked",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "palette": "primary",
+                "size": "sm",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "palette": "secondary",
+                "size": "md",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "palette": "naked",
+                "size": "lg",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Button test",
+                "fullWidth": true,
+                "palette": "primary",
+                "size": "sm",
+              },
+              "ref": null,
+              "rendered": "Button test",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Weight",
+              },
+              "ref": null,
+              "rendered": "Weight",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 1,
+                "size": "lg",
+                "weight": "light",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 1,
+                "size": "lg",
+                "weight": "normal",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 1,
+                "size": "lg",
+                "weight": "bold",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Level gives the h tag number, whereas the size modify the font-size",
+              },
+              "ref": null,
+              "rendered": "Level gives the h tag number, whereas the size modify the font-size",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 4,
+                "size": "xs",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 3,
+                "size": "lg",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 4,
+                "size": "lg",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 1,
+                "size": "md",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 2,
+                "size": "sm",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "level": 3,
+                "size": "xs",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "family is the font",
+              },
+              "ref": null,
+              "rendered": "family is the font",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "family": "primary",
+                "level": 1,
+                "size": "md",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Heading",
+                "family": "secondary",
+                "level": 1,
+                "size": "md",
+              },
+              "ref": null,
+              "rendered": "Heading",
+              "type": [Function],
+            },
+          ],
+          "type": "main",
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  min-height: 100vh;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
