@@ -3,9 +3,9 @@
 // rafc
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../images/logo.svg';
 import { elevation, fixed, primaryColor } from '../styles';
 import { Heading, Grid, Col, Row, Button } from '../components/elements';
+import { Link } from 'react-router-dom';
 type HeaderProps = {
   className: string,
 };
@@ -21,18 +21,21 @@ const Header = ({ className }: HeaderProps) => (
         </Col>
         <Col xs={6}>
           <div className="navigation">
-            <Button palette="secondary" size="lg">
-              About
-            </Button>
-            <Button palette="secondary" size="lg">
-              Create your SVG
-            </Button>
-            <Button palette="secondary" size="lg">
-              Gallery
-            </Button>
-            <Button palette="secondary" size="lg">
-              Contact
-            </Button>
+            <Link to="/">
+              <Button palette="secondary" size="lg">
+                HOME
+              </Button>
+            </Link>
+            <Link to="/about">
+              <Button palette="secondary" size="lg">
+                About
+              </Button>
+            </Link>
+            <Link to="/graph">
+              <Button palette="secondary" size="lg">
+                Create your SVG
+              </Button>
+            </Link>
           </div>
         </Col>
       </Row>
